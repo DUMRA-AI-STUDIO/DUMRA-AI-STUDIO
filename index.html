@@ -110,6 +110,25 @@ function createVideo(){
  'Your settings are ready. AI video engine connection is still required.';
 }
 </script>
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./service-worker.js")
+      .then(() => console.log("DUMRA AI STUDIO is ready"))
+      .catch(error => console.log("App setup error:", error));
+  });
+}
+</script>
+
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./service-worker.js")
+      .then(() => console.log("DUMRA AI STUDIO is ready"))
+      .catch(error => console.log("App setup error:", error));
+  });
+}
+</script>
 </body>
 </html>
 
